@@ -3,3 +3,9 @@ export const addNewFeature = (feature) => {
 		type: 'ADD_ITEM', payload: feature
 	}
 }
+
+export const deleteFeature = (feature) => {
+	return {
+		type: 'DELETE_ITEM', payload: feature
+	}
+}

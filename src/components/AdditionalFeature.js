@@ -1,14 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
 import { addNewFeature } from '../actions';
 
 const AdditionalFeature = props => {
-  console.log(props)
+  console.log(props);
   
   const addFeatureHandler = (e) => {
     e.preventDefault();
-    props.addNewFeature(props.feature)
+    props.addNewFeature(props.feature);
   };
   
   return (
@@ -24,6 +23,6 @@ const mapPropsToState = (state) => {
   return {
 
   }
-}
+};
 
 export default connect(mapPropsToState, { addNewFeature })(AdditionalFeature);
